@@ -129,4 +129,4 @@ def user_update(id):
         db.session.commit()
         return redirect(url_for('user_list'))
 
-app.run(debug=True)
+# app.run(debug=True)
