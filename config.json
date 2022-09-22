@@ -1,0 +1,11 @@
+{
+  "params":
+  {
+    "sql_url": "mysql://admin:admin@localhost/python-login",
+    "project_name": "Max Python",
+    "gmail-user": "devzeeshanmalik@gmail.com",
+    "gmail-password": "03060000417",
+    "img_folder": "C:\\Users\\Hp\\PycharmProjects\\login-registration\\static",
+    "no_of_posts": 5
+  }
+}

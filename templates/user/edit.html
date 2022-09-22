@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block title %}User Listing{% endblock %}
+{% block body %}
+
+<form action="/update/{{data.sno}}" method="post" class="p-5" enctype="multipart/form-data">
+    <h1 class=" text-primary text-center ">Edit User Details</h1>
+    {% set user_img = data.image %}
+    <img src="{{ url_for('static', filename=user_img) }}" width="60">
+     <div class="mb-3 mt-3">
+      <label >Upload Profile:</label>
+      <input type="file" class="form-control"   name="file1" >
+    </div>
+     <div class="mb-3 mt-3">
+      <label >User Name:</label>
+      <input type="text" class="form-control"  placeholder="Enter User Name" name="username" value="{{data.username}}">
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" value="{{data.email}}">
+    </div>
+    <div class="mb-3">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password" name="password" value="{{data.password}}">
+    </div>
+    <button type="submit" class="btn btn-primary">Update</button>
+  </form>
+
+
+
+
+
+
+
+
+{% endblock %}
